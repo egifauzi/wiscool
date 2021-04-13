@@ -15,3 +15,4 @@ part 'sign_up_page.dart';
 part 'address_page.dart';
 part 'main_page.dart';
 part 'food_page.dart';
+part 'food_details_page.dart';
