@@ -300,7 +300,7 @@ class PaymentPage extends StatelessWidget {
                                 defaultMargin -
                                 5,
                             child: Text(
-                              'Adress',
+                              'Address',
                               style: greyFontStyle,
                             ),
                           ),
@@ -328,7 +328,7 @@ class PaymentPage extends StatelessWidget {
                                 defaultMargin -
                                 5,
                             child: Text(
-                              'House No',
+                              'House Number',
                               style: greyFontStyle,
                             ),
                           ),
