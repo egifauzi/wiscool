@@ -28,9 +28,10 @@ class User extends Equatable {
 User mockUser = User(
     id: 1,
     name: 'Elon Musk',
-    address: 'jln. Silicon valley, seberang warkop Kasih',
+    address: 'jln. Silicon valley, seberang warkop Kasih AYAH',
     city: 'California',
-    houseNumber: '+166642042069',
+    houseNumber: '420',
+    phoneNumber: '+1866642069',
     email: 'Elon@boring.com',
     picturePath:
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTQ1_5HjuF9ISSEzzBIZhuh9GDQQOWJHZgA&usqp=CAU');

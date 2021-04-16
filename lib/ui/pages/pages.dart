@@ -7,6 +7,7 @@ import 'package:food_market/models/models.dart';
 import 'package:food_market/shared/shared.dart';
 import 'package:food_market/ui/pages/widgets/widgets.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 import 'package:supercharged/supercharged.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,3 +19,4 @@ part 'address_page.dart';
 part 'main_page.dart';
 part 'food_page.dart';
 part 'food_details_page.dart';
+part 'payment_page.dart';
