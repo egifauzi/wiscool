@@ -11,7 +11,7 @@ class RatingStars extends StatelessWidget {
     return Row(
       children: 
         List<Widget>.generate(5, (index) => Icon( //kasih tau ini list of widget
-          (index < numberOfStart) ? MdiIcons.star : MdiIcons.starOutline, size: 16, color: mainColor,
+          (index < numberOfStart) ? MdiIcons.starCircle : MdiIcons.starOutline, size: 16, color: mainColor,
         )) + 
         [
           SizedBox(

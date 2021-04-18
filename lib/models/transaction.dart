@@ -48,7 +48,7 @@ List<Transaction> mockTransactions = [
       food: mockFoods[1],
       quantity: 4,
       total: (mockFoods[1].price * 4 * 1.1).round() +
-          50000, ////Harga  dikali quantity 4 * pajak 10% tambah ongkir
+          50000, ////Harga  dikali quantity 4 * pajak 10% tambah ongkir ||ROUND = dibulatkan/ double to int
       dateTime: DateTime.now(),
       status: TransactionStatus.on_delivery,
       user: mockUser),

@@ -20,7 +20,7 @@ class _FoodPageState extends State<FoodPage> {
               padding: EdgeInsets.symmetric(horizontal: defaultMargin),
               color: Colors.white,
               height: 100,
-              width: double.infinity,
+              width: double.infinity,////MediaQuery.of(context).size.width, // lebar selebar-lebarnya container/parents
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
