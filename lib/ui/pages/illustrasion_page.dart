@@ -38,9 +38,8 @@ class IllustrasionPage extends StatelessWidget {
               style: greyFontStyle.copyWith(fontWeight: FontWeight.w300),
               textAlign: TextAlign.center),
           Container(
-            margin: EdgeInsets.only(top: 30, bottom: 12),
-          ),
-          Container(
+            width: 200,
+            height: 45,
             margin: EdgeInsets.only(top: 30, bottom: 12),
             child: RaisedButton(
               onPressed: buttonTap1,
@@ -52,7 +51,7 @@ class IllustrasionPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8)),
               child: Text(
                 buttonTitle1,
-                style: blackFontStyle3.copyWith(fontWeight: FontWeight.w500),
+                style: blackFontStyle3.copyWith(fontWeight: FontWeight.w500,),
               ),
             ),
           ),
@@ -64,6 +63,8 @@ class IllustrasionPage extends StatelessWidget {
           (buttonTap2 == null)
               ? SizedBox()
               : SizedBox(
+                width: 200,
+                height: 45,
                   child: RaisedButton(
                     onPressed: buttonTap2,
                     elevation: 0,
@@ -71,9 +72,9 @@ class IllustrasionPage extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8)),
                     child: Text(
-                      buttonTitle2,
+                      buttonTitle2 ?? 'title',
                       style:
-                          blackFontStyle3.copyWith(fontWeight: FontWeight.w500),
+                          blackFontStyle3.copyWith(fontWeight: FontWeight.w500, color: Colors.white),
                     ),
                   ),
                 ),

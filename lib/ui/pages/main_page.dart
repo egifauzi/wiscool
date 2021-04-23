@@ -37,8 +37,12 @@ class _MainPageState extends State<MainPage> {
                     title: 'Laper Bruh?\n    hmmm',
                     subtitle: "I guess u didn't\nsmoked WEED yet",
                     picturePath: 'assets/love_burger.png',
+                    buttonTap1: () {},
                     buttonTitle1: 'let get some weed',
-                    buttonTap1: () {}),
+                    buttonTap2: () {},
+                    buttonTitle2: 'oke',
+                    ),
+                    
               ),
               Center(
                 child: Text('Profile'),
