@@ -383,10 +383,11 @@ class PaymentPage extends StatelessWidget {
                     
                     width: 312,
                     height: 45,
-                    child: RaisedButton(onPressed: () {},
-                    color: mainColor,
+                    child: TextButton(onPressed: () {},
+                    style: TextButton.styleFrom(
+                    foregroundColor: mainColor,
                     elevation:  0,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),),
                     child: Text('Checkout', style: blackFontStyle3.copyWith(fontWeight: FontWeight.w500),),),
 
                   ),

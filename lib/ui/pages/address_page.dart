@@ -124,13 +124,14 @@ class _AdressPageState extends State<AdressPage> {
             margin: EdgeInsets.only(top: 24),
             height: 45,
             padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-            child: RaisedButton(
+            child: TextButton(
               onPressed: () {},
+              style: TextButton.styleFrom(
               elevation: 10,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
-              color: mainColor,
+              foregroundColor: mainColor,),
               child: Text(
                 'Sign Up Now',
                 style: GoogleFonts.poppins(

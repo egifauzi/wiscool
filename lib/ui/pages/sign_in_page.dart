@@ -73,13 +73,14 @@ class _SignInPageState extends State<SignInPage> {
                     size: 45,
                     color: mainColor,
                   )
-                : RaisedButton(
+                : TextButton(
                     onPressed: () {},
+                    style: TextButton.styleFrom(
                     elevation: 10,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    color: mainColor,
+                    foregroundColor: mainColor,),
                     child: Text(
                       'SIGN IN',
                       style: GoogleFonts.poppins(
@@ -97,15 +98,16 @@ class _SignInPageState extends State<SignInPage> {
                     size: 45,
                     color: mainColor,
                   )
-                : RaisedButton(
+                : TextButton(
                     onPressed: () {
                       Get.to(SignUpPage());
                     },
+                    style: TextButton.styleFrom(
                     elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    color: greyColor,
+                    foregroundColor: greyColor,),
                     child: Text(
                       'Creaate New Account',
                       style: GoogleFonts.poppins(

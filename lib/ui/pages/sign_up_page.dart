@@ -112,15 +112,16 @@ class _SignUpPageState extends State<SignUpPage> {
             margin: EdgeInsets.only(top: 24),
             height: 45,
             padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-            child: RaisedButton(
+            child: TextButton(
               onPressed: () {
                 Get.to(AdressPage());
               },
+              style: TextButton.styleFrom(
               elevation: 10,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
-              color: mainColor,
+              foregroundColor: mainColor,),
               child: Text(
                 'Continue',
                 style: GoogleFonts.poppins(

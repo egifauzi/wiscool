@@ -189,12 +189,13 @@ class _FoodDetailsPageState extends State<FoodDetailsPage> {
                             SizedBox(
                               width: 163,
                               height: 45,
-                              child: RaisedButton(
+                              child: TextButton(
                                 onPressed: () {},
-                                color: mainColor,
+                                style: TextButton.styleFrom(
+                                foregroundColor: mainColor,
                                 elevation: 0,
                                 shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8),)
                                 ),
                                 child: Text(
                                   'Order Sekarang',

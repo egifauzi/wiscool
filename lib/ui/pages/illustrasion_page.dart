@@ -41,17 +41,21 @@ class IllustrasionPage extends StatelessWidget {
             width: 200,
             height: 45,
             margin: EdgeInsets.only(top: 30, bottom: 12),
-            child: RaisedButton(
-              onPressed: buttonTap1,
-
-              ///tidak perlu cek null atau tdk karena dipaksa
-              elevation: 0,
-              color: mainColor,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8)),
+            child: TextButton(
+                onPressed: buttonTap1,
+                
+                style: TextButton.styleFrom(
+                  ///tidak perlu cek null atau tdk karena dipaksa
+                  elevation: 0,
+                  foregroundColor: mainColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8)),
+                ),
               child: Text(
                 buttonTitle1,
-                style: blackFontStyle3.copyWith(fontWeight: FontWeight.w500,),
+                style: blackFontStyle3.copyWith(
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
           ),
@@ -63,18 +67,19 @@ class IllustrasionPage extends StatelessWidget {
           (buttonTap2 == null)
               ? SizedBox()
               : SizedBox(
-                width: 200,
-                height: 45,
-                  child: RaisedButton(
+                  width: 200,
+                  height: 45,
+                  child: TextButton(
                     onPressed: buttonTap2,
+                    style: TextButton.styleFrom(
                     elevation: 0,
-                    color: '8D92A3'.toColor(),
+                    foregroundColor: '8D92A3'.toColor(),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
+                        borderRadius: BorderRadius.circular(8))),
                     child: Text(
                       buttonTitle2 ?? 'title',
-                      style:
-                          blackFontStyle3.copyWith(fontWeight: FontWeight.w500, color: Colors.white),
+                      style: blackFontStyle3.copyWith(
+                          fontWeight: FontWeight.w500, color: Colors.white),
                     ),
                   ),
                 ),
